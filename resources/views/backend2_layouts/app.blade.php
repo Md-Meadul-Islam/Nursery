@@ -60,7 +60,7 @@
         class="bi bi-arrow-up-short"></i></a>
     <script src="{{asset('backend2')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="{{asset('backend2')}}/js/main.js"></script>
-    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   @include('../backend2/seller/plants_js')
   {!! Toastr::message() !!}

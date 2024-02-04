@@ -30,25 +30,25 @@
                                 <div class="carousel slide position-relative pt-2" data-bs-interval="false" data-index="{{ $index }}">
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img src="{{Storage::url('plants_images/'.$plant->photo_1)}}"class="img-fluid files"
+                                            <img src="{{ asset('storage/plants_images/' . $plant->photo_1) }}"class="img-fluid files"
                                                 style="width:100%; height:300px; object-fit: cover;" alt="First slide">
                                         </div>
                                         @if ($plant->photo_2)
                                         <div class="carousel-item active">
-                                            <img src="{{Storage::url('plants_images/'.$plant->photo_2)}}"class="img-fluid files"
+                                            <img src="{{ asset('storage/plants_images/' . $plant->photo_2) }}"class="img-fluid files"
                                                 style="width:100%; height:300px; object-fit: cover;" alt="Second slide">
                                         </div>
                                         @endif
                                         @if ($plant->photo_3)
                                         <div class="carousel-item active">
-                                            <img src="{{Storage::url('plants_images/'.$plant->photo_3)}}"class="img-fluid files"
+                                            <img src="{{ asset('storage/plants_images/' . $plant->photo_3) }}"class="img-fluid files"
                                                 style="width:100%; height:300px; object-fit: cover;" alt="Third slide">
                                         </div>
                                         @endif
                                         @if ($plant->video)
                                         <div class="carousel-item">
                                             <video class="files" style="object-fit: cover; width:100%; height: 300px;" controls muted>
-                                                <source src="{{Storage::url('plants_video/'.$plant->video)}}" alt="Video">
+                                                <source src="{{ asset('storage/plants_video/'.$plant->video) }}" alt="Video">
                                             </video>
                                         </div>
                                         @endif

@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="row align-items-center h-50 w-100">
                         <div class="col-6">
-                            <img src="{{Storage::url('plants_images/'.$cartPlant->photo_1)}}"
+                            <img src="{{ asset('storage/plants_images/' . $plant->photo_1) }}"
                                 class="img-fluid rounded-circle p-2" alt="">
                         </div>
                         <div class="col-6">

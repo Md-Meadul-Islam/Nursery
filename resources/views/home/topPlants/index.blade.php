@@ -11,7 +11,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="{{Storage::url('plants_images/'.$top->photo_1)}}"
+                            <img src="{{ asset('storage/plants_images/' . $plant->photo_1) }}"
                                 class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">

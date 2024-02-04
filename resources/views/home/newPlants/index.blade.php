@@ -4,7 +4,7 @@
      @foreach ($newPlants as $newPlant)
      <div class="border border-primary rounded position-relative vesitable-item">
         <div class="vesitable-img">
-            <img src="{{Storage::url('plants_images/'.$newPlant->photo_1)}}"
+            <img src="{{ asset('storage/plants_images/' . $plant->photo_1) }}"
                 class="img-fluid w-100 rounded-top" alt=""style="height:240px">
         </div>
         <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
